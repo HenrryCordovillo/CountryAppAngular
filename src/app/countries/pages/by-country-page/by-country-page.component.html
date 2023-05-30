@@ -1,0 +1,16 @@
+<h3>By country</h3>
+<hr />
+<div class="row">
+  <div class="col">
+    <shared-search-box
+      placeholder="Shearch by country..."
+      (onValue)="searchByCountry($event)"
+    ></shared-search-box>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <hr />
+    <countries-country-table [countries]="countries"></countries-country-table>
+  </div>
+</div>
